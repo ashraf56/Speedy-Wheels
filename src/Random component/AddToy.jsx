@@ -11,7 +11,7 @@ const AddToy = () => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const onSubmit = (data,e) => {
       
-fetch('https://b7a11-toy-marketplace-server-three.vercel.app/alltoy',{
+fetch('https://wheels-server-one.vercel.app/alltoy',{
   method:"POST",
   headers:{
     'content-type':'application/json'

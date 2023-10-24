@@ -19,7 +19,7 @@ let Toys=useLoaderData()
 
       }).then((result) => {
        if (result.isConfirmed) {
-    fetch(`https://b7a11-toy-marketplace-server-three.vercel.app/alltoy/${Toys._id}`,{
+    fetch(`https://wheels-server-one.vercel.app/alltoy/${Toys._id}`,{
   method:"PUT",
   headers:{
     'content-type':'application/json'

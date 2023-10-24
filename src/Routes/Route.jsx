@@ -51,7 +51,7 @@ const router = createBrowserRouter([
 {
     path:'/alltoy',
     element: <AllTOy></AllTOy>,
-    loader:()=> fetch('https://b7a11-toy-marketplace-server-three.vercel.app/alltoy')
+    loader:()=> fetch('https://wheels-server-one.vercel.app/alltoy')
 },
 {
     path:'/mytoy',
@@ -64,14 +64,14 @@ const router = createBrowserRouter([
     element: <Private>
 <UpdateToy></UpdateToy>
     </Private>,
-    loader: ({params})=> fetch(`https://b7a11-toy-marketplace-server-three.vercel.app/alltoy/${params.id}`)
+    loader: ({params})=> fetch(`https://wheels-server-one.vercel.app/alltoy/${params.id}`)
 },
 {
     path:'/detail/:id',
     element: <Private>
 <ViewDetail/>
     </Private>,
-    loader: ({params})=> fetch(`https://b7a11-toy-marketplace-server-three.vercel.app/alltoy/${params.id}`)
+    loader: ({params})=> fetch(`https://wheels-server-one.vercel.app/alltoy/${params.id}`)
 },
 
       ]

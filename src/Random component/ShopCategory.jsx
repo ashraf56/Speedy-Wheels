@@ -11,7 +11,7 @@ let [active,setactive]=useState('truck')
 
 useEffect(()=>{
 
-fetch(`https://b7a11-toy-marketplace-server-three.vercel.app/atoy/${active}`)
+fetch(`https://wheels-server-one.vercel.app/atoy/${active}`)
 .then(res=>res.json())
 .then(data=>{
     console.log(data);

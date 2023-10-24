@@ -8,7 +8,7 @@ const Mytoy = () => {
 let {user}=useContext(ContextAuth)
 let [mytoys,setmytoy]=useState([])
 
-let url=`https://b7a11-toy-marketplace-server-three.vercel.app/mytoy?email=${user?.email}`
+let url=`https://wheels-server-one.vercel.app/mytoy?email=${user?.email}`
 useEffect(()=>{
 fetch(url)
 .then(res=> res.json())
@@ -31,7 +31,7 @@ let deletetoy=id=>{
     confirmButtonText: 'Yes, delete it!'
   }).then((result) => {
     if (result.isConfirmed) {
-      fetch(`https://b7a11-toy-marketplace-server-three.vercel.app/alltoy/${id}`, {
+      fetch(`https://wheels-server-one.vercel.app/alltoy/${id}`, {
         method:"DELETE",
       }) .then(res=> res.json())
       .then(data=>{
