@@ -4,6 +4,7 @@ import { ContextAuth } from '../Routes/AuthenticationCenter';
 import { Button, Form } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import Swal from 'sweetalert2';
+import toast, { Toaster } from 'react-hot-toast';
 
 const AddToy = () => {
     let {user}=useContext(ContextAuth)
@@ -23,14 +24,7 @@ fetch('https://wheels-server-one.vercel.app/alltoy',{
   console.log(data);
   if (data.insertedId) {
     
-    Swal.fire({
-      position: 'top-center',
-      icon: 'success',
-      title: 'Toy added successfully',
-      showConfirmButton: false,
-      timer: 1500
-    })
-    
+   toast.success('Toy added')
     
       }
 })
@@ -107,7 +101,7 @@ e.target.reset();
 
   <button type="submit" className="btn btn-warning w-100">Add Toy</button>
 </form>
-
+<Toaster></Toaster>
 </div>
         </div>
     );

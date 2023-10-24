@@ -12,10 +12,16 @@ Speedy Wheely Toy Marketplace is an online platform where users can buy and sell
 
 
 # Technologies Used
-- Front-end: HTML, CSS, JavaScript, React.js
-- Back-end: Node.js, Express.js
-- Database: MongoDB
-- Authentication: Firebase Auth
+- React js
+- Bootstrap
+- Firebase
+- MongoDB
+- Node js
+- Express
+- AOS
+- swiper
+- Vite
+- Vercel
 
 # Live site link
 

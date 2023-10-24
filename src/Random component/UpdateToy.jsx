@@ -1,6 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { useLoaderData } from 'react-router-dom';
+import { FaArrowLeft  } from 'react-icons/fa';
+import { Link, useLoaderData } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
 const UpdateToy = () => {
@@ -49,7 +50,13 @@ e.target.reset();
     return (
         <div >
 
-
+<div className='mt-3 mx-2'>
+  <button className='btn' >
+    <Link to={`/mytoy`}>
+      <FaArrowLeft/>
+    </Link>
+  </button>
+</div>
 <h1 className='text-center text-uppercase fw-bold py-4'>Update Toy Info</h1>
 
                        <div className='w-50 mx-auto mb-5'>
