@@ -4,18 +4,19 @@ import Form from 'react-bootstrap/Form';
 import {  Link } from 'react-router-dom';
 import { ContextAuth } from '../Routes/AuthenticationCenter';
 import { useForm } from "react-hook-form";
+import toast, { Toaster } from 'react-hot-toast';
 
 const Signup = () => {
-let {user,Createuser,updateProf}=useContext(ContextAuth)
+let {user,Createuser,updateUser}=useContext(ContextAuth)
 const { register, handleSubmit ,reset} = useForm();
 const onSubmit = (data ,e)=>{
   Createuser(data.email, data.password)
 .then((userCredential) => {
     const user = userCredential.user;
-    updateProf(data.name,data.photoURL)
+    updateUser(data.name,data.photoURL)
     .then(() => {
      
-   
+   toast.success('Registration success')
    }).catch((error) => {
     console.log(error);
    });
@@ -23,31 +24,11 @@ const onSubmit = (data ,e)=>{
   .catch((error) => {
     const errorMessage = error.message;
    console.log(errorMessage);
+   toast.error(errorMessage)
   });
 reset()
 };
 
-let registerdata=(e)=>{
-  e.preventDefault();
-  let F=e.target;
-let name=F.name.value;
-let url=F.photo.value;
-let email=F.email.value;
-let password=F.password.value;
-console.log(name ,url ,email,password);
-
-Createuser(email,password)
-.then((userCredential) => {
-    const user = userCredential.user;
-   console.log(user);
-  })
-  .catch((error) => {
-    const errorMessage = error.message;
-   console.log(errorMessage);
-  });
-
-F.reset();
-}
 
 
     return (
@@ -87,7 +68,7 @@ F.reset();
   </Button>
   
 </Form>
-
+<Toaster></Toaster>
 </div>
         </div>
     );

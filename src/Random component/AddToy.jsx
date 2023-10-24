@@ -46,11 +46,11 @@ e.target.reset();
     <label className="form-label">Seller Email </label>
     <input type="email"   className="form-control"  
     {...register("email", { required: true})} 
-    defaultValue={user?.email}
+    defaultValue={user?.email} disabled
     />
   </div>
   <div className="mb-3">
-    <label  className="form-label">Name </label>
+    <label  className="form-label">Toy name </label>
     <input type="text"   className="form-control"  
     {...register("name", { required: true})} 
    

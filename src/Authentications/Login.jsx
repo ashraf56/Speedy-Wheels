@@ -5,6 +5,7 @@ import Form from 'react-bootstrap/Form';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { ContextAuth } from '../Routes/AuthenticationCenter';
 import { signInWithEmailAndPassword } from 'firebase/auth';
+import toast from 'react-hot-toast';
 
 const Login = () => {
     let {user,google,Login}=useContext(ContextAuth)
@@ -20,10 +21,12 @@ const Login = () => {
       .then((userCredential) => {
         const user = userCredential.user;
         console.log(user);
+        toast.success("Log in success")
       })
       .catch((error) => {
         const errorMessage = error.message;
         console.log(errorMessage);
+        
       });
       navigate(from , {replace:true});
     reset()
