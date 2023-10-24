@@ -1,0 +1,8 @@
+.img-hover:hover {
+transition: opacity 0.3s ease-in-out;
+  }
+  
+  .img-hover:hover{
+    opacity: 0.6; 
+  }
+  
