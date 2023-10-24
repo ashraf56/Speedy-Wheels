@@ -15,11 +15,7 @@ const AllTOy = () => {
             <h1 className='text-center text-uppercase fw-bold py-4' >Toys Galore: A Playground of Playthings</h1>
 
 
-<div class="input-group ps-5 pt-4 text-center mb-3">
-  <input type="text" classNames="form-control" placeholder="search"  />
 
-  <span className="input-group-text btn btn-outline-dark "    id="basic-addon2">search</span>
-</div>
 
 <div className='my-5 mx-5'>
 <Table striped bordered hover size="sm">
