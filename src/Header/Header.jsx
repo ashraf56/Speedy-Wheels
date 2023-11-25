@@ -21,8 +21,8 @@ const Header = () => {
         <div>
         <Navbar collapseOnSelect expand="lg"  variant="light">
       <Container>
-        <Navbar.Brand href="#home" className='fw-bold text-uppercase'>
-          <img src={logo} style={{width:'50px'}}  />
+        <Navbar.Brand  className='fw-bold text-uppercase'>
+          <img src={logo} style={{width:'30px'}}  />
          <span className='ps-2'> Speedy Wheels</span> </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" > 
@@ -55,7 +55,7 @@ const Header = () => {
 {
   user? <>
  
-  { user?.photoURL?  <img src={user.photoURL}  data-tooltip-id="my-tooltip" data-tooltip-content={user.displayName}  style={{width:'40px', height:'40px' , borderRadius:'20px'}} /> 
+  { user?.photoURL?  <img src={user.photoURL}  data-tooltip-id="my-tooltip" data-tooltip-content={user.displayName}  style={{width:'30px', height:'30px' , borderRadius:'20px'}} /> 
 : <img src='https://img.icons8.com/?size=512&id=gYI9v0NbFgxC&format=png'  data-tooltip-id="my-tooltip" data-tooltip-content={user.displayName || user.email}  style={{width:'40px', height:'40px' , borderRadius:'20px'}} />
 }
   <Tooltip id="my-tooltip" />

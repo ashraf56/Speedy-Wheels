@@ -12,7 +12,7 @@ const AllTOy = () => {
 
     return (
         <div >
-            <h1 className='text-center text-uppercase fw-bold py-4' >Toys Galore: A Playground of Playthings</h1>
+            <p className='text-start text-uppercase fs-5 fw-semibold px-5 pt-5' >Toys Galore: A Playground of Playthings</p>
 
 
 

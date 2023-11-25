@@ -50,10 +50,10 @@ e.target.reset();
     return (
         <div >
 
-<div className='mt-3 mx-2'>
-  <button className='btn' >
+<div className='mt-3 mx-5 '>
+  <button className='btn btn-warning ' >
     <Link to={`/mytoy`}>
-      <FaArrowLeft/>
+      <FaArrowLeft />
     </Link>
   </button>
 </div>
