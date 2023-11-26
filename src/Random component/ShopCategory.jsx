@@ -35,7 +35,7 @@ const TabClick = (tabs) => {
  <TabPanel>
   <div className="row row-cols-1 row-cols-md-2 g-4">
      {
-    alltoy.map(toy=> <ToyCard
+    alltoy.slice(0,4).map(toy=> <ToyCard
     toy={toy}
     
     ></ToyCard> )
@@ -47,7 +47,7 @@ const TabClick = (tabs) => {
  <TabPanel>
  <div className="row row-cols-1 row-cols-md-2 g-4">
      {
-    alltoy.map(toy=> <ToyCard
+    alltoy.slice(0,4).map(toy=> <ToyCard
     toy={toy}
     
     ></ToyCard> )
@@ -59,7 +59,7 @@ const TabClick = (tabs) => {
 
  <div className="row row-cols-1 row-cols-md-2 g-4">
      {
-    alltoy.map(toy=> <ToyCard
+    alltoy.slice(0,4).map(toy=> <ToyCard
     toy={toy}
     
     ></ToyCard> )

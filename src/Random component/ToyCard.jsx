@@ -13,7 +13,7 @@ const ToyCard = ({toy}) => {
      
       <div className="card-body px-5">
         <h5 className="card-title">{toy.name}</h5>
-        <p className="card-text fw-semibold">{toy.price}$</p>
+        <p className="card-text fw-semibold">${toy.price}</p>
         <p className="card-text"><FaStar className='text-warning'/> {toy.rating}</p>
        <Link to={`/detail/${toy._id}`} ><button className='btn btn-warning'>View Detail</button></Link> 
       </div>
