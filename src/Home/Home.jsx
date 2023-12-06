@@ -9,20 +9,19 @@ const Home = () => {
 
 
     return (
-        <div className='container-lg' >
+        <div className='container mx-auto' >
          <Banner></Banner>
 
          <About></About>
 
-         <div data-aos="zoom-in">
         <Gallery></Gallery>    
-         </div>
+        
 
 <ShopCategory></ShopCategory>
 
-         <div data-aos="fade-down">
+        
               <Partner></Partner>
-         </div>
+        
         </div>
     );
 };

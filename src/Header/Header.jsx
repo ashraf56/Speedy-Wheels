@@ -18,8 +18,8 @@ const Header = () => {
     });
   }
     return (
-        <div>
-        <Navbar collapseOnSelect expand="lg"  variant="light">
+        <>
+        <Navbar collapseOnSelect expand="lg"  variant="light" >
       <Container>
         <Navbar.Brand  className='fw-bold text-uppercase'>
           <img src={logo} style={{width:'30px'}}  />
@@ -75,7 +75,7 @@ const Header = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-        </div>
+        </>
     );
 };
 
