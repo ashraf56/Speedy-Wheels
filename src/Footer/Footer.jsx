@@ -27,11 +27,11 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div class="col-sm-6 col-md-3 item">
-                        <h3>About</h3>
+                        <h3>Location</h3>
                         <ul>
-                            <li><a href="#">Company</a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">22, Lorem ipsum dolor, consectetur adipiscing</a></li>
+                            <li><a href="#">(541) 754-3010</a></li>
+                            <li><a href="#">ashrafulfahim07@gmail.com</a></li>
                         </ul>
                     </div>
                     <div class="col-md-6 item text">
