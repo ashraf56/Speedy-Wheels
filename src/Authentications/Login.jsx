@@ -69,7 +69,7 @@ let Gsignin=()=>{
             <h1 className='text-center fw-bold text-uppercase'>Sign in now</h1>
           
 
-            <div className='w-50 card p-5 my-5 mx-auto mb-5'>
+            <div className='w-75 card p-5 my-5 mx-auto mb-5'>
 
 
 <Form onSubmit={handleSubmit(onSubmit)} >

@@ -1,65 +1,49 @@
 import React from 'react';
+import './Footer.css'
 import logo from '../assets/wheel.png'
 import { FaBeer, FaFacebook, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
       
-             <footer className="w-100 py-4 flex-shrink-0 bg-dark h-100">
-        <div className="container py-4">
-            <div className="row gy-4 gx-5">
-                <div className="col-lg-4 col-md-6">
-                    <h5 className=" text-white">
-<img src={logo} style={{width:'40px'}}/>
-                      <span className='text-light h3 ps-2 '>Speedy Wheels</span> 
-                    </h5>
-                    <p className="small text-muted">
-                          
-Speedy Wheels Toy Marketplace
-</p>
-                    <p className="small text-muted mb-0">&copy; Copyrights 2023 Speedy Wheels. All rights reserved  </p>
-                </div>
-                <div className="col-lg-2 col-md-6">
-                    <h5 className="text-white  mb-3">Follow Us </h5>
-                    <div className="small text-muted  ">
-                       <span>Follow us on soicial media</span>
-                        <div className='fs-3'>
-                       
-                        <span> <FaFacebook /> </span>    
-                        <span> <FaLinkedin  /> </span>    
-                        <span>  <FaYoutube /></span>    
-                        <span> <FaTwitter /> </span>  
-
-
-
-                        </div>
-
-
+        <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                    
+  <li className="nav-item">
+    <Link className="nav-link " to='/' >HOME</Link>
+  </li>
+  <li className="nav-item">
+  <Link className="nav-link "  to='/blog' >FAQ</Link>  </li>
+  <li className="nav-item">
+  <Link className="nav-link "  to='/alltoy' >ALL TOY</Link>  </li>
+ 
+ 
+                        </ul>
                     </div>
-                
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text">
+                        <h3>Speedy Wheels</h3>
+                        <p>We envision a world where toy enthusiasts can easily find and engage with a wide variety of toys, whether they are collectors, hobbyists, or parents looking for the perfect toy for their child. We aim to create a vibrant community where toy sellers can showcase their collections and buyers can explore a vast selection of toys, fostering a sense of nostalgia and delight. What We Offer</p>
+                    </div>
+                   
                 </div>
-                <div className="col-lg-3 col-md-6">
-                    <h5 className="text-white mb-3">Contact Us:
-</h5>
-                    <ul className="list-unstyled text-muted">
-                        <li><a>Phone: +1-123-456-7890
-</a></li>
-                        <li><a >Email: info@speedywheels.com
-
-</a></li>
-                      
-                    </ul>
-                </div>
-                <div className="col-lg-3 col-md-6">
-                    <h5 className="text-white mb-3">Adress</h5>
-                    <p className="small text-muted">123 Main Street
-Anytown, USA
-Zip Code: 12345</p>
-                
-                </div>
+                <p class="copyright"> Ashraful islam © 2023</p>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
         
     );
 };

@@ -34,8 +34,9 @@ const Banner = () => {
           data-swiper-parallax="-23%"
         ></div>
         <SwiperSlide>
-          <div className="title py-2 " data-swiper-parallax="-300">
-          Race to Adventure: <br /> Explore our Exciting Toy Car  <br /> Collection!
+          <div className=" py-2  " data-swiper-parallax="-300">
+        <h1>Race to Adventure: <br /> Explore our Exciting Toy Car  <br /> Collection!
+          </h1>  
           </div>
           <div className="subtitle" data-swiper-parallax="-200">
           Discover a World of Speed and Adventure
@@ -47,8 +48,9 @@ const Banner = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="title py-2" data-swiper-parallax="-300">
-          Speedy Wheels Specials: <br /> Discover Limited-Time Offers <br />on Fast and Furious Toys!
+          <div className=" py-2" data-swiper-parallax="-300">
+       <h1>Speedy Wheels Specials: <br /> Discover Limited-Time Offers <br />on Fast and Furious Toys!
+        </h1>   
           </div>
           <div className="subtitle" data-swiper-parallax="-200">
           Limited-Time Deals for Racing Enthusiasts
@@ -60,8 +62,9 @@ const Banner = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="title" data-swiper-parallax="-300">
-          Rev Up the Fun: <br />  Experience Thrilling <br /> Races with  our Remote <br /> Control Cars!
+          <div className="" data-swiper-parallax="-300">
+       <h1>Rev Up the Fun: <br />  Experience Thrilling <br /> Races with  our Remote <br /> Control Cars!
+        </h1>   
           </div>
           <div className="subtitle " data-swiper-parallax="-200">
           Take Control and Experience the <br /> Thrill of Remote Control Racing

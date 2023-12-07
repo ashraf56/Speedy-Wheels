@@ -36,7 +36,7 @@ reset()
 
 <h1 className='text-center fw-bold text-uppercase'> Signup now</h1>
 
-            <div className='w-50 mx-auto mb-5'>
+            <div className='w-75 mx-auto mb-5 my-5 '>
 
 
 <Form onSubmit={handleSubmit(onSubmit)}>

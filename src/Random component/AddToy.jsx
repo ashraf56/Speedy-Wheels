@@ -25,7 +25,6 @@ quantity:data.quantity,
 
 
 }
-console.log(iData);
       fetch('https://wheels-server-one.vercel.app/alltoy',{
         method:"POST",
         headers:{
@@ -49,11 +48,11 @@ e.target.reset();
     ;
 
     return (
-        <div>
+        <div className='d-flex-col'>
 
 <h1 className='text-center text-uppercase fw-bold py-4'>Add Your Toy</h1>
 
-               <div className=' shadow p-5 w-50 mx-auto mb-5'>
+               <div className=' shadow p-5 w-75 h-auto mx-auto mb-5'>
 
 
                <form onSubmit={handleSubmit(onData)}>
