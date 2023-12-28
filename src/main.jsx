@@ -18,7 +18,7 @@ import AuthenticationCenter from './Routes/AuthenticationCenter.jsx';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <AuthenticationCenter>
-       <RouterProvider router={router} />
-</AuthenticationCenter>
+      <RouterProvider router={router} />
+    </AuthenticationCenter>
   </React.StrictMode>,
 )

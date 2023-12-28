@@ -10,18 +10,18 @@ const Home = () => {
 
     return (
         <div className='container ' >
-         <Banner></Banner>
+            <Banner></Banner>
 
-         <About></About>
+            <About></About>
 
-        <Gallery></Gallery>    
-        
+            <Gallery></Gallery>
 
-<ShopCategory></ShopCategory>
 
-        
-              <Partner></Partner>
-        
+            <ShopCategory></ShopCategory>
+
+
+            <Partner></Partner>
+
         </div>
     );
 };
