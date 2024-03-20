@@ -14,7 +14,7 @@ const ShopCategory = () => {
     fetch(`https://wheels-server-one.vercel.app/atoy/${active}`)
       .then(res => res.json())
       .then(data => {
-        console.log(data);
+
         setalltoy(data)
       })
 
@@ -26,11 +26,16 @@ const ShopCategory = () => {
   return (
     <div className='my-5'>
       <h1 className='text-center text-uppercase fw-bold py-4' > Find Your Favorites</h1>
+      {alltoy.length === 0 ? <div class="d-flex justify-content-center">
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div> : 
       <Tabs>
         <TabList>
-          <Tab onClick={() => TabClick("truck")}>Truck</Tab>
-          <Tab onClick={() => TabClick("SportsCar")} >SportsCar</Tab>
-          <Tab onClick={() => TabClick("policecar")}>Policecar</Tab>
+          <Tab onClick={() => TabClick("truck")}> <span className='fw-bold text-uppercase'>Truck</span> </Tab>
+          <Tab onClick={() => TabClick("SportsCar")} > <span className='fw-bold text-uppercase'>SportsCar</span></Tab>
+          <Tab onClick={() => TabClick("policecar")}> <span className='fw-bold text-uppercase'>Policecar</span></Tab>
         </TabList>
         <TabPanel>
           <div className="row row-cols-1 row-cols-md-2 g-4">
@@ -66,7 +71,7 @@ const ShopCategory = () => {
             }
           </div>
         </TabPanel>
-      </Tabs>
+      </Tabs>}
     </div>
   );
 };

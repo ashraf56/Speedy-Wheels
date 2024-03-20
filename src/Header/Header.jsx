@@ -19,7 +19,7 @@ const Header = () => {
   }
     return (
         <>
-        <Navbar collapseOnSelect expand="lg"  variant="light" >
+        <Navbar collapseOnSelect expand="lg"  variant="light"  className='rounded-5 bg-warning my-3 container'>
       <Container>
         <Navbar.Brand  className='fw-bold text-uppercase'>
           <img src={logo} style={{width:'30px'}}  />

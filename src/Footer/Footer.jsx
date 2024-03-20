@@ -40,7 +40,7 @@ const Footer = () => {
                     </div>
                    
                 </div>
-                <p class="copyright"> Ashraful islam © 2023</p>
+                <p class="copyright"> Copyright © 2024 - All right reserved by Ashraful</p>
             </div>
         </footer>
     </div>

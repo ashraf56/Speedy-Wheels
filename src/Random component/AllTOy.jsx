@@ -13,10 +13,12 @@ const AllTOy = () => {
       <div className='my-5 mx-5 '>
         <div class="row row-cols-1 row-cols-md-2 g-4">
 
-          {
-            Toys.map(toy => (
+          { Toys.length === 0 ? (
+            <div>Loading</div>
+          ) :
+            (Toys.map(toy => (
               <ToyCard toy={toy}></ToyCard>
-            ))
+            )))
           }
 
         </div>
