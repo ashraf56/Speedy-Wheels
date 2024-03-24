@@ -68,11 +68,11 @@ const Mytoy = () => {
             mytoys.map(mt => (
 
               <div>
-                <div className="alert shadow border border-warning rounded-5 " role="alert">
+                <div className="alert p-5 shadow border border-warning rounded-5 " role="alert">
                   <div>
                     <h3>{mt.name}</h3>
                     <h6 className='fw-semibold'>$ {mt.price}</h6>
-                    <h6 className='fw-semibold'>Category:{mt.subCategory}</h6>
+                    <h6 className='fw-semibold'>Category: {mt.subCategory}</h6>
                     <p className='fw-semibold'>Available Quantity: {mt.quantity}</p>
                     <p>{mt.description}</p>
                   </div>
