@@ -18,7 +18,7 @@ const ViewDetail = () => {
 
               <div className="card-body ">
 
-                <h5 className="display-6 fs-1 fw-bolder"> {viewtoy.name}</h5>
+                <h5 className="display-6 fs-4 fw-bolder"> {viewtoy.name}</h5>
                 <p className="card-text "> <span className='fw-bold'>price:</span> $ {viewtoy.price}</p>
                 <p className="card-text  "><span className='fw-bold'>Seller:</span> {viewtoy.seller}</p>
                 <p className="card-text "><span className='fw-bold'>Seller-Email:</span> <mark>{viewtoy.email}</mark> </p>
