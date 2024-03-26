@@ -3,6 +3,7 @@ import { ContextAuth } from '../Routes/AuthenticationCenter';
 import { Table } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
+import { FaAd, FaCar } from 'react-icons/fa';
 
 const Mytoy = () => {
   let { user } = useContext(ContextAuth)
@@ -64,8 +65,14 @@ const Mytoy = () => {
 
       <div className='my-5 mx-5'>
         <div className='row row-cols-1 row-cols-md-1 g-4 '>
-          {
-            mytoys.map(mt => (
+          {mytoys.length === 0 ? <div className='text-center'>
+            <p className='fs-1'>
+              <FaCar></FaCar> <br />
+              <span>Add Some Toy</span>
+            </p>
+          </div>
+            :
+            (mytoys.map(mt => (
 
               <div>
                 <div className="alert p-5 shadow border border-warning rounded-5 " role="alert">
@@ -81,7 +88,7 @@ const Mytoy = () => {
                   <button className='btn my-5 btn-danger mx-2' onClick={() => deletetoy(mt._id)} >Delete</button>
                 </div>
               </div>
-            ))
+            )))
           }
         </div>
       </div>
