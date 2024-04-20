@@ -23,7 +23,7 @@ Speedy Wheely Toy Marketplace is an online platform where users can buy and sell
 - Vite
 - Vercel
 
-# Live site link
+# Live  link
 
 - https://speedy-wheels-1bd1c.web.app/
 
